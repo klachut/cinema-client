@@ -5,73 +5,20 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(59, 59, 133) 35%, rgb(2, 0, 36) 100%);
+    background: ivory;
     width: 100%;
 }
-/*-------------------------------------------------------*/
-/*.screen{*/
-/*    width:100%;*/
-/*    height:20px;*/
-/*    background:#4388cc;*/
-/*    color:#fff;*/
-/*    line-height:20px;*/
-/*    font-size:15px;*/
-/*}*/
-
-
-/*.free{*/
-/*    background: black;*/
-/*}*/
-
-/*.occupied{*/
-/*    background: red;*/
-/*}*/
-
-/*.selected{*/
-/*    background: green;*/
-/*}*/
-
-/*.seat{*/
-/*    height: 30px;*/
-/*    width: 30px;*/
-/*    margin: 10px;*/
-/*    border-radius: 8%;*/
-/*    color: #F5F5F5;*/
-/*    user-select:none;*/
-/*    text-align: center;*/
-/*    display: block;*/
-/*    float:left;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.vip{*/
-/*    height: 30px;*/
-/*    width: 80px;*/
-/*}*/
-
-/*.numb1{*/
-/*    font-size: 20px;*/
-/*    font-weight: bold;*/
-/*    color: black;*/
-/*}*/
-
-/*.numb2{*/
-/*    font-size: 20px;*/
-/*    font-weight: bold;*/
-/*    color: black;*/
-/*}*/
-
 
 
 .caloscSeat{
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
 }
 .containerSeat {
     height: 500px;
-    width: 500px;
-    margin: 2.5%;
+    width: 90%;
+    margin-left: 30px;
     display: grid;
     grid-template-columns: repeat(13, 1fr);
     grid-template-rows: repeat(14, 1fr);
@@ -81,7 +28,7 @@ body{
 #screenSeat{
     grid-column-start: 2;
     grid-column-end: 14;
-    background-color: cornflowerblue;
+    background-color: darkorange;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +39,7 @@ body{
 }
 
 .occupied{
-    background: darkred;
+    background: indianred;
 }
 
 .selected{
@@ -133,16 +80,20 @@ body{
     display: flex;
     align-items: center;
     padding: 20px 100px 20px 50px;
+
 }
 
 nav{
     flex: 1;
-    text-align: right;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
 }
 
 nav ul{
     display: inline-block;
     list-style-type: none;
+    text-align:center;
 }
 
 nav ul li{
@@ -150,10 +101,12 @@ nav ul li{
     margin-right: 20px;
     font-size: 30px;
     font-weight: bold;
+    text-align:center;
 
 }
 nav a{
     color: #000000;
+    text-align:center;
 }
 
 nav a:hover{
@@ -163,6 +116,7 @@ nav a:hover{
 a{
     text-decoration: none;
     color: #555;
+    text-align:center;
 }
 
 p{
@@ -170,7 +124,7 @@ p{
 }
 
 .container{
-    max-width: 1300px;
+    width: 100%;
     margin: auto;
     padding-left: 40px;
     padding-right: 40px;
@@ -181,6 +135,9 @@ p{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    color: #3700B3;
+    min-width: 100px;
+    margin-top: 20px;
 }
 
 .rowRepertuar{
@@ -188,11 +145,15 @@ p{
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+    width: 80%;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
 }
 
 .containerRepertuarSelectDay{
-    width: 60%;
-    margin-left:20%;
+    width: 100%;
+
     background: none;
 }
 
@@ -225,8 +186,8 @@ p{
 }
 
 .col-2{
-    flex-basis: 50%;
-    min-width: 300px;
+    margin-top: 20px;
+    min-width: 250px;
 }
 
 .col-2 img{
@@ -247,7 +208,7 @@ p{
 
 .btn{
     display: inline-block;
-    background: #ff523b;
+    background: darkorange;
     color: #fff;
     padding: 8px 30px;
     margin: 30px 0;
@@ -262,17 +223,22 @@ p{
 }
 
 .headerMenu{
-    width: 60%;
-    background-color: #6fa2e0;
-    margin-left: 20%;
+    width: 100%;
+    background-color: darkorange;
+    flex: 1;
+    justify-content: space-evenly;
+
 }
 
 .header{
-    background: linear-gradient(#6fa2e0, #f8f5f5);
-    width: 60%;
+    background: #ffead8;
+    color: #3700B3;
+    width: 100%;
     height: 680px;
-    margin: 40px auto auto;
-    padding-top: 40px;
+    margin: 5px 5px 5px 5px;
+
+
+
 }
 
 .header .col-2 img{
@@ -282,12 +248,10 @@ p{
 
 .categories{
     flex: 1;
-    width: 60%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    width: 100%;
     height: auto;
-    background: linear-gradient(#f8f5f5, #c67d7d, #c67d7d );
-    margin: 40px 0 40px 20%;
+    background-color: seashell;
+
 }
 
 .categoriesRepertuar{
@@ -317,7 +281,8 @@ p{
 }
 
 .col-3 img{
-    width: 100%;
+    width: 80%;
+    margin-left: 60px;
 }
 
 .col-3:hover{
@@ -325,11 +290,24 @@ p{
 }
 
 .small-container{
-    max-width: 1080px;
-    margin: auto;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: auto;
     padding-top: 50px;
     padding-left: 15px;
     padding-right: 15px;
+    background-color: #ffd4b1;
+
+}
+.smaller-container{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #ffead8;
+
 }
 
 .col-4{
@@ -338,6 +316,7 @@ p{
     min-width: 200px;
     margin-bottom: 50px;
     transition: transform 0.5s;
+
 }
 
 .col-4 img{
@@ -392,16 +371,17 @@ p{
 }
 
 h4{
-    color: #555;
+    color: #0000ff;
     font-weight: normal;
 }
 
 .col-4 p{
     font-size: 14px;
+    color: #0000ff;
 }
 
 .rating .fa{
-    color: yellow;
+    color: darkorange;
     margin-right: 5px;
 }
 
@@ -413,8 +393,8 @@ h4{
 /* FOOTER */
 
 .footer{
-    background: #000;
-    color: #8a8a8a;
+    background: #2510a3;
+    color: white;
     font-size: 14px;
     padding: 60px 0;
     width: 100%;
@@ -437,6 +417,7 @@ h4{
 
 .footer-col-1{
     flex-basis: 30%;
+    color: #ffead8;
 }
 
 .footer-col-2{
@@ -479,7 +460,6 @@ ul{
 
 .menu-icon{
     width: 28px;
-    margin-left: 20px;
     display: none;
 }
 
@@ -495,6 +475,8 @@ ul{
         width: 100%;
         overflow: hidden;
         transition: max-height 0.5s;
+        text-align:center;
+
     }
 
     nav ul li{
@@ -502,10 +484,12 @@ ul{
         margin-right: 50px;
         margin-top: 10px;
         margin-bottom: 10px;
+        text-align:center;
     }
 
     nav ul li a{
         color: #fff;
+        text-align:center;
     }
     .menu-icon{
         display: block;
@@ -521,6 +505,7 @@ ul{
 @media only screen and (max-width: 800px) {
     .row{
         text-align: center;
+        color: #3700B3;
     }
     .col-2, .col-3, .col-4{
         flex-basis: 100%;
@@ -568,15 +553,17 @@ table, th, td{
 }
 
 .titleClosestSeans{
-    font-size: 25px;
-    text-align: center;
+    font-size: 15px;
+    margin-left: 60px;
     font-weight: bold;
+    color: #3700B3;
 }
 
 .dateClosestSeans{
     font-size: 20px;
     text-align: center;
     font-weight: bold;
+    color: #0000ff;
 }
 
 .menu{
