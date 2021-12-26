@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="kino, filmy, bilety, informacje, polecane, seanse, najbliższe">
+    <meta name="description" content="Serwis internetowy sieci kin HowToExitVim">
+    <title>Cinema</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="file/cinema_logo.png" type="image/jpg" sizes="16x16">
+</head>
+<body>
+
+<!------ header menu ----->
+
+<div class="headerMenu" >
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="file/cinema_logo.png" height="90px" alt="Logo kina"></a>
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="repertuar.html">Repertuar</a></li>
+                    <li><a href="cennik.html">Cennik</a></li>
+                </ul>
+            </nav>
+             <img src="file/menu_icon.png" class="menu-icon" onclick="menutoogle()" alt="menu">
+        </div>
+</div>
+
+<!------ header content ----->
+<div class="header" >
+    <div class="container">
+        <div class="row">
+            <div class="col-2 headerButton" >
+                <h1 id="reservationTitle"></h1>
+                <p id="reservationDescription"></p><br>
+                <ul>
+                    <li id="reservationDirector"></li>
+                    <li id="reservationScenario"></li>
+                    <li id="reservationType"> </li>
+                    <li id="reservationProduction"></li>
+                    <li id="reservationPremiere"> </li>
+                </ul>
+            </div>
+            <div class="col-2" id="pictureActualyFilm">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------ closest films ----->
+<div class="categories">
+    <div class="small-container">
+        <h2 class="title">Najbliższe seanse</h2>
+        <div class="row" id="closestShows">
+
+        </div>
+    </div>
+
+<!------ recommended films ----->
+    <div class="small-container">
+        <h2 class="title">Polecane Seanse</h2>
+        <div class="row" id="recomendSeans" style="margin-top: 50px">
+
+        </div>
+    </div>
+</div>
+
+<!------ footer ----->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Pobierz naszą Appke</h3>
+                <p>Download App for android mobile phone</p>
+                <div class="app-logo">
+                    <a href="https://play.google.com/store?gl=PL" target="_blank"><img src="file/android_logo.png" alt="logo"></a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <a href="index.html"><img src="file/cinema_logo.png" height="150px" alt="Logo kina"></a>
+                <p>Tutaj jest stopka i nwm co wpisać</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Pomocne linki</h3>
+                <ul>
+                    <li>Kupony</li>
+                    <li>Polityka Prywatności</li>
+                    <li>Regulamin Kina</li>
+                    <li>Regulamin Zwrotów</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Śledź nas</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitch.com" target="_blank">Twitch</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - Kino project_07_howToExitVim</p>
+    </div>
+</div>
+
+<script>
+    let menuItems = document.getElementById("menuItems");
+    menuItems.style.maxHeight = "0px";
+
+    function menutoogle(){
+        if(menuItems.style.maxHeight === "0px"){
+            menuItems.style.maxHeight = "200px";
+        }else{
+            menuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/recomendSeans.js"></script>
+
+</body>
+
+
+</html>

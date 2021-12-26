@@ -1,0 +1,9 @@
+@media only screen and (max-width: 1424px) {
+    .categories{
+        height: 1050px;
+    }
+    .containerSeat{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
